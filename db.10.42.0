@@ -1,0 +1,24 @@
+$TTL    604800
+@       IN      SOA     okd4-services.okd.fv. admin.okd.fv. (
+                  6     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      okd4-services.okd.fv.
+
+; name servers - PTR records
+210    IN    PTR    okd4-services.okd.fv.
+
+; OpenShift Container Platform Cluster - PTR records
+200    IN    PTR    okd4-bootstrap.lab.okd.fv.
+201    IN    PTR    okd4-control-plane-1.lab.okd.fv.
+202    IN    PTR    okd4-control-plane-2.lab.okd.fv.
+203    IN    PTR    okd4-control-plane-3.lab.okd.fv.
+204    IN    PTR    okd4-compute-1.lab.okd.fv.
+205    IN    PTR    okd4-compute-2.lab.okd.fv.
+210    IN    PTR    api.lab.okd.fv.
+210    IN    PTR    api-int.lab.okd.fv.
